@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      overflow-x: hidden;
+    }
+
+    video {
+      width: 100vw;         /* 滿版寬度 */
+      height: auto;         /* 高度自適應 */
+      display: block;
+      margin: 0;
+      padding: 0;
+      max-height: 100vh;    /* 避免在手機上高度過高 */
+    }
+  </style>
+</head>
+<body>
+  <video controls poster="./realtime.png">
+    <source src="https://saki88888.github.io/Plotly/realtime.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+</body>
+</html>

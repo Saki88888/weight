@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <select id="feature-selector">
+        <option value="">Select a Feature</option>
+        <option value="https://saki88888.github.io/Plotly/neural_network_connectivity_all.png">All</option>
+        <option value="https://saki88888.github.io/Plotly/neural_network_connectivity_elevation.png">Elevation</option>
+        <option value="https://saki88888.github.io/Plotly/neural_network_connectivity_riding_time.png">Riding Time</option>
+        <option value="https://saki88888.github.io/Plotly/neural_network_connectivity_riding_distance.png">Riding Distance</option>
+        <option value="https://saki88888.github.io/Plotly/neural_network_connectivity_speed.png">Speed</option>
+        <option value="https://saki88888.github.io/Plotly/neural_network_connectivity_max_speed.png">Max Speed</option>
+        <option value="https://saki88888.github.io/Plotly/neural_network_connectivity_average_speed.png">Average Speed</option>
+        <option value="https://saki88888.github.io/Plotly/neural_network_connectivity_latitude.png">Latitude</option>
+        <option value="https://saki88888.github.io/Plotly/neural_network_connectivity_longitude.png">Longitude</option>
+        <option value="https://saki88888.github.io/Plotly/neural_network_connectivity_cadence_value.png">Cadence Value</option>
+        <option value="https://saki88888.github.io/Plotly/neural_network_connectivity_average_cadence_value.png">Average Cadence Value</option>
+        <option value="https://saki88888.github.io/Plotly/neural_network_connectivity_power_value.png">Power Value</option>
+        <option value="https://saki88888.github.io/Plotly/neural_network_connectivity_average_power_value.png">Average Power Value</option>
+        <option value="https://saki88888.github.io/Plotly/neural_network_connectivity_max_power_value.png">Max Power Value</option>
+        <option value="https://saki88888.github.io/Plotly/neural_network_connectivity_battery_total_value.png">Battery Total Value</option>
+        <option value="https://saki88888.github.io/Plotly/neural_network_connectivity_remaining_range_value.png">Remaining Range Value</option>
+        <option value="https://saki88888.github.io/Plotly/neural_network_connectivity_assist_mode_value.png">Assist Mode Value</option>
+        <option value="https://saki88888.github.io/Plotly/neural_network_connectivity_torque_value.png">Torque Value</option>
+        <option value="https://saki88888.github.io/Plotly/neural_network_connectivity_assist_current_value.png">Assist Current Value</option>
+    </select>
+    <br><br>
+    <img id="feature-image" src="https://saki88888.github.io/Plotly/neural_network_connectivity_all.png" style="max-width:100%; height:auto;">
+
+    <script>
+        document.getElementById('feature-selector').addEventListener('change', function() {
+            var imageUrl = this.value;
+            document.getElementById('feature-image').src = imageUrl;
+        });
+    </script>
+</body>
+</html>

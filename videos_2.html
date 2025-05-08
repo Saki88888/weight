@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: transparent;
+    }
+    /* 外層容器，讓影片能夠在不同設備上自適應排列 */
+    .video-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+      max-width: 480px; /* 設定最大寬度 */
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <video controls poster="IMG_7982.jpeg">
+    <source src="https://saki88888.github.io/Plotly/02_choice.mp4" type="video/mp4">
+  </video>
+
+</body>
+</html>
